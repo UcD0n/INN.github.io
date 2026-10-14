@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INN – Indonesia New News</title>
+<meta name="description" content="Berita terkini Indonesia: nasional, internasional, ekonomi, olahraga, teknologi dan hiburan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="preloader" aria-live="polite">
+  <div class="pl-mark"><span>I</span><span>N</span><span>N</span></div>
+  <p>Indonesia New News</p>
+  <div class="pl-bar"></div>
+</div>
+
+<header class="top">
+  <div class="top-meta wrap">
+    <time id="tanggal"></time>
+    <span class="live"><i></i>Diperbarui langsung</span>
+  </div>
+  <div class="top-main wrap">
+    <a class="logo" href="./" aria-label="INN – Indonesia New News">
+      <b>INN</b><small>Indonesia New News</small>
+    </a>
+    <label class="search">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input id="cari" type="search" placeholder="Cari berita di halaman ini" aria-label="Cari berita">
+    </label>
+  </div>
+  <nav class="wrap" aria-label="Kategori">
+    <ul id="kategori">
+      <li><button data-k="terbaru" class="on">Terbaru</button></li>
+      <li><button data-k="nasional">Nasional</button></li>
+      <li><button data-k="internasional">Internasional</button></li>
+      <li><button data-k="ekonomi">Ekonomi</button></li>
+      <li><button data-k="olahraga">Olahraga</button></li>
+      <li><button data-k="teknologi">Teknologi</button></li>
+      <li><button data-k="hiburan">Hiburan</button></li>
+      <li><button data-k="gaya-hidup">Gaya Hidup</button></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="ticker" id="ticker" hidden>
+  <div class="wrap"><strong>Sekarang</strong><div class="ticker-view"><div class="ticker-track" id="tickerTrack"></div></div></div>
+</div>
+
+<main class="wrap" id="main">
+  <section id="hero" class="hero" aria-label="Berita utama"></section>
+  <h2 class="sec" id="secJudul" hidden>Berita lainnya</h2>
+  <section id="berita" class="grid" aria-live="polite"></section>
+  <div id="status" class="status" hidden></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <b>INN</b> <span>Indonesia New News</span>
+    <p>Berita dikumpulkan dari CNN Indonesia. Hak cipta isi berita milik sumber aslinya.</p>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
